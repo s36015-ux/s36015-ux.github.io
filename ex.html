@@ -1,10 +1,8 @@
-```html
 <!DOCTYPE html>
 <html lang="th">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <title>แฟ้มสะสมงานของ เอกครินทร์</title>
 
 <style>
@@ -26,13 +24,14 @@ body{
     margin:auto;
 }
 
-/* Header */
+/* ส่วนหัว */
 header{
     text-align:center;
     padding:50px 20px;
     color:white;
 }
 
+/* รูปโปรไฟล์ */
 .profile{
     width:180px;
     height:180px;
@@ -52,19 +51,13 @@ header p{
     font-size:1.1rem;
 }
 
-/* Card */
+/* กล่องผลงาน */
 .project-card{
     background:white;
     padding:25px;
     margin:25px 0;
     border-radius:15px;
     box-shadow:0 5px 15px rgba(0,0,0,0.15);
-    transition:.3s;
-}
-
-.project-card:hover{
-    transform:translateY(-8px);
-    box-shadow:0 10px 20px rgba(0,0,0,0.25);
 }
 
 .project-card h3{
@@ -72,46 +65,19 @@ header p{
     margin-bottom:10px;
 }
 
-/* Button */
-.btn{
-    display:inline-block;
-    background:#ff6b6b;
-    color:white;
-    text-decoration:none;
-    padding:12px 25px;
-    border-radius:30px;
-    margin-top:20px;
-    transition:.3s;
-}
-
-.btn:hover{
-    background:#ff4757;
-}
-
-/* Footer */
 footer{
     text-align:center;
     padding:30px;
     color:white;
-    margin-top:40px;
-}
-
-@media(max-width:768px){
-    header h1{
-        font-size:2rem;
-    }
-
-    .profile{
-        width:140px;
-        height:140px;
-    }
 }
 </style>
-
 </head>
+
 <body>
 
 <header>
+
+    <!-- รูปโปรไฟล์ -->
     <img src="profile.jpg" alt="รูปโปรไฟล์" class="profile">
 
     <h1>แฟ้มสะสมงาน (Portfolio)</h1>
@@ -120,49 +86,41 @@ footer{
         เอกครินทร์ หงษ์วิเศษ<br>
         นักเรียนผู้สนใจด้านเทคโนโลยี การเขียนโปรแกรม และการออกแบบเว็บไซต์
     </p>
+
 </header>
 
 <div class="container">
 
     <div class="project-card">
         <h3>💻 โครงงานวิทยาศาสตร์คำนวณ</h3>
-
         <p>
-            พัฒนาเว็บไซต์โดยใช้ HTML และ CSS
-            เพื่อฝึกการออกแบบหน้าเว็บและการจัดการข้อมูล
-            ได้เรียนรู้การเขียนโค้ด การแก้ไขปัญหา และการทำงานเป็นทีม
+            พัฒนาเว็บไซต์ด้วย HTML และ CSS
+            ศึกษาการออกแบบเว็บ การเขียนโค้ด และการแก้ปัญหาในการพัฒนาเว็บไซต์
         </p>
     </div>
 
     <div class="project-card">
         <h3>🏆 กิจกรรมและเกียรติบัตร</h3>
-
         <p>
             เข้าร่วมกิจกรรมทางวิชาการและการแข่งขันภายในโรงเรียน
-            ได้รับเกียรติบัตรด้านการใช้เทคโนโลยีสารสนเทศ
-            และการพัฒนาเว็บไซต์เบื้องต้น
+            พร้อมได้รับเกียรติบัตรด้านเทคโนโลยีสารสนเทศ
         </p>
     </div>
 
     <div class="project-card">
-        <h3>📚 ทักษะที่มี</h3>
-
+        <h3>📚 ทักษะ</h3>
         <p>
             HTML • CSS • JavaScript • Canva • Microsoft Office
         </p>
-    </div>
-
-    <center>
         <a href="index.html" class="btn">🏠 กลับหน้าแรก</a>
         <a href="portfolio.html" class="btn"> กลับหน้าportfolio</a>
-    </center>
+    </div>
 
 </div>
 
 <footer>
-    © 2026 Portfolio | เอกครินทร์ หงษ์วิเศษ
+    © 2025 Portfolio | เอกครินทร์ หงษ์วิเศษ
 </footer>
 
 </body>
 </html>
-```
