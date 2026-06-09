@@ -1,33 +1,165 @@
-<!-- นี่คือโครงสร้างหน้าเว็บทังหมด ้ -->
 <!DOCTYPE html>
 <html lang="th">
 <head>
 <meta charset="UTF-8">
-<title>หน้าแนะนำตัวของแอล</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>แฟ้มสะสมงานของ เอกครินทร์</title>
+
 <style>
-body {
-background-color: #B03060; color: #333;
-text-align: center; padding: 50px;
-
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
 }
-.card {
-background: LightCoral; border-radius: 20px;
-box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-max-width: 500px; margin: 0 auto; padding: 30px;
 
+body{
+    font-family:'Segoe UI',sans-serif;
+    background:linear-gradient(135deg,#ff9a9e,#fad0c4);
+    min-height:100vh;
 }
-h1 { color: #2c3e50; }
-p { font-size: 18px; line-height: 1.6; }
+
+.container{
+    width:90%;
+    max-width:1000px;
+    margin:auto;
+}
+
+/* Header */
+header{
+    text-align:center;
+    padding:50px 20px;
+    color:white;
+}
+
+.profile{
+    width:180px;
+    height:180px;
+    border-radius:50%;
+    object-fit:cover;
+    border:5px solid white;
+    box-shadow:0 5px 15px rgba(0,0,0,0.3);
+}
+
+header h1{
+    margin-top:20px;
+    font-size:2.5rem;
+}
+
+header p{
+    margin-top:10px;
+    font-size:1.1rem;
+}
+
+/* Card */
+.project-card{
+    background:white;
+    padding:25px;
+    margin:25px 0;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.15);
+    transition:.3s;
+}
+
+.project-card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 10px 20px rgba(0,0,0,0.25);
+}
+
+.project-card h3{
+    color:#ff6b6b;
+    margin-bottom:10px;
+}
+
+/* Button */
+.btn{
+    display:inline-block;
+    background:#ff6b6b;
+    color:white;
+    text-decoration:none;
+    padding:12px 25px;
+    border-radius:30px;
+    margin-top:20px;
+    transition:.3s;
+}
+
+.btn:hover{
+    background:#ff4757;
+}
+
+/* Footer */
+footer{
+    text-align:center;
+    padding:30px;
+    color:white;
+    margin-top:40px;
+}
+
+@media(max-width:768px){
+    header h1{
+        font-size:2rem;
+    }
+
+    .profile{
+        width:140px;
+        height:140px;
+    }
+}
 </style>
+
 </head>
 <body>
-<div class="card">
-<h1>ยินดีต้อนรับสู่โปรไฟล์ของแอล </h1>
-<p>สวัสดีครับ! ผมชื่อ <strong>เอกครินทร์ (Aekkharin)</strong></p>
-<p>ขณะนี้กำลังศึกษา/สนใจด้าน Computer Science & Engineering</p>
-<p>นี่คือเว็บไซต์แรกของผมที่โพสต์บน GitHub Pages!</p>
-  <a href="portfolio.html" class="btn"> กลับหน้าportfolio</a>
-  <a href="ex.html" class="btn"> กลับหน้าex</a>
+
+<header>
+    <img src="profile.jpg" alt="รูปโปรไฟล์" class="profile">
+
+    <h1>แฟ้มสะสมงาน (Portfolio)</h1>
+
+    <p>
+        เอกครินทร์ หงษ์วิเศษ<br>
+        นักเรียนผู้สนใจด้านเทคโนโลยี การเขียนโปรแกรม และการออกแบบเว็บไซต์
+    </p>
+</header>
+
+<div class="container">
+
+    <div class="project-card">
+        <h3>💻 โครงงานวิทยาศาสตร์คำนวณ</h3>
+
+        <p>
+            พัฒนาเว็บไซต์โดยใช้ HTML และ CSS
+            เพื่อฝึกการออกแบบหน้าเว็บและการจัดการข้อมูล
+            ได้เรียนรู้การเขียนโค้ด การแก้ไขปัญหา และการทำงานเป็นทีม
+        </p>
+    </div>
+
+    <div class="project-card">
+        <h3>🏆 กิจกรรมและเกียรติบัตร</h3>
+
+        <p>
+            เข้าร่วมกิจกรรมทางวิชาการและการแข่งขันภายในโรงเรียน
+            ได้รับเกียรติบัตรด้านการใช้เทคโนโลยีสารสนเทศ
+            และการพัฒนาเว็บไซต์เบื้องต้น
+        </p>
+    </div>
+
+    <div class="project-card">
+        <h3>📚 ทักษะที่มี</h3>
+
+        <p>
+            HTML • CSS • JavaScript • Canva • Microsoft Office
+        </p>
+    </div>
+
+    <center>
+        <a href="index.html" class="btn">🏠 ไปหน้าportfolio</a>
+    </center>
+
 </div>
+
+<footer>
+    © 2026 Portfolio | เอกครินทร์ หงษ์วิเศษ
+</footer>
+
 </body>
 </html>
