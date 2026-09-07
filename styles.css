@@ -179,16 +179,24 @@ img{display:block;max-width:100%;}
     font-size:1.6rem;
 }
 
+/* ---- ปรับส่วนนี้: ทำให้รูปเป็นกรอบขนาดคงที่ อยู่กึ่งกลาง ไม่ใหญ่เกินไป ---- */
 .cover2-photo-row{
     position:relative;
     flex:1;
     display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:24px;
+    padding:30px 6vw;
 }
 
 .cover2-photo{
-    flex:1;
-    min-height:52vh;
+    width:280px;
+    height:280px;
+    flex:0 0 auto;
+    border-radius:var(--radius-lg);
     overflow:hidden;
+    box-shadow:var(--shadow);
 }
 
 .cover2-photo img{
@@ -206,6 +214,8 @@ img{display:block;max-width:100%;}
     justify-content:center;
     gap:14px;
     padding:20px 0;
+    border-radius:var(--radius-md);
+    align-self:stretch;
 }
 
 .cover2-vertical .v-title{
@@ -270,9 +280,11 @@ img{display:block;max-width:100%;}
 
 @media(max-width:640px){
     .cover2-topbar{flex-direction:column;align-items:flex-start;}
-    .cover2-photo{min-height:40vh;}
-    .cover2-vertical{flex-basis:48px;}
-    .cover2-vertical .v-title{font-size:1.1rem;}
+    .cover2-photo-row{flex-direction:column;padding:24px 6vw;}
+    .cover2-photo{width:200px;height:200px;}
+    .cover2-vertical{flex-basis:48px;width:100%;flex-direction:row;padding:10px 0;}
+    .cover2-vertical .v-title{writing-mode:horizontal-tb;transform:none;font-size:1.1rem;}
+    .cover2-vertical .v-label{writing-mode:horizontal-tb;transform:none;}
     .cover2-footerbar{flex-direction:column;align-items:flex-start;}
 }
 
