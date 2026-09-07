@@ -71,9 +71,10 @@
     gap:32px;
   }
 
+  /* ---------- Photo box: only the image, shown in full ---------- */
   .cert-photo{
     position:relative;
-    background:var(--pink-photo);
+    background:#ffffff;
     border-radius:16px;
     min-height:230px;
     overflow:hidden;
@@ -85,22 +86,8 @@
     width:100%;
     height:100%;
     object-fit:contain;
-    background:#ffffff;
     display:block;
   }
-  .cert-photo .placeholder{
-    display:none;
-    flex-direction:column;
-    align-items:center;
-    justify-content:center;
-    gap:10px;
-    color:#8a4a63;
-    text-align:center;
-    padding:16px;
-  }
-  .cert-photo.no-image .placeholder{ display:flex; }
-  .cert-photo .placeholder svg{ opacity:.6; }
-  .cert-photo .placeholder span{ font-size:13px; line-height:1.5; }
 
   .year-tag{
     position:absolute;
@@ -171,12 +158,8 @@
 
     <!-- 1 -->
     <article class="cert-card">
-      <div class="cert-photo no-image">
-        <img src="images/cert-01.jpg" alt="เกียรติบัตรการแข่งขันคิดเลขเร็ว"
-             onerror="this.style.display='none'">
-        <div class="placeholder">
-          <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="9" cy="10" r="2"/><path d="M21 17l-5.5-5.5L9 18"/></svg>
-                 </div>
+      <div class="cert-photo">
+        <img src="images/cert-01.jpg" alt="เกียรติบัตรการแข่งขันคิดเลขเร็ว">
         <span class="year-tag">ประจำปีการศึกษา 2567</span>
       </div>
       <div class="cert-body">
@@ -187,12 +170,8 @@
 
     <!-- 2 -->
     <article class="cert-card">
-      <div class="cert-photo no-image">
-        <img src="images/cert-02.jpg" alt="เกียรติบัตรการแข่งขันคลิปวิดีโอ TikTok"
-             onerror="this.style.display='none'">
-        <div class="placeholder">
-          <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="9" cy="10" r="2"/><path d="M21 17l-5.5-5.5L9 18"/></svg>
-                 </div>
+      <div class="cert-photo">
+        <img src="images/cert-02.jpg" alt="เกียรติบัตรการแข่งขันคลิปวิดีโอ TikTok">
         <span class="year-tag">ประจำปีการศึกษา 2567</span>
       </div>
       <div class="cert-body">
@@ -203,12 +182,8 @@
 
     <!-- 3 -->
     <article class="cert-card">
-      <div class="cert-photo no-image">
-        <img src="images/cert-03.jpg" alt="เกียรติบัตรการประกวดคำขวัญต่อต้านการทุจริต"
-             onerror="this.style.display='none'">
-        <div class="placeholder">
-          <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="9" cy="10" r="2"/><path d="M21 17l-5.5-5.5L9 18"/></svg>
-               </div>
+      <div class="cert-photo">
+        <img src="images/cert-03.jpg" alt="เกียรติบัตรการประกวดคำขวัญต่อต้านการทุจริต">
         <span class="year-tag">ประจำปีการศึกษา 2568</span>
       </div>
       <div class="cert-body">
@@ -219,12 +194,8 @@
 
     <!-- 4 -->
     <article class="cert-card">
-      <div class="cert-photo no-image">
-        <img src="images/cert-04.jpg" alt="เกียรติบัตรอุ่นใจไซเบอร์"
-             onerror="this.style.display='none'">
-        <div class="placeholder">
-          <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="9" cy="10" r="2"/><path d="M21 17l-5.5-5.5L9 18"/></svg>
-               </div>
+      <div class="cert-photo">
+        <img src="images/cert-04.jpg" alt="เกียรติบัตรอุ่นใจไซเบอร์">
         <span class="year-tag">ประจำปีการศึกษา 2568</span>
       </div>
       <div class="cert-body">
@@ -235,12 +206,8 @@
 
     <!-- 5 -->
     <article class="cert-card">
-      <div class="cert-photo no-image">
-        <img src="images/cert-05.jpg" alt="เกียรติบัตร Internet Alert"
-             onerror="this.style.display='none'">
-        <div class="placeholder">
-          <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="9" cy="10" r="2"/><path d="M21 17l-5.5-5.5L9 18"/></svg>
-                 </div>
+      <div class="cert-photo">
+        <img src="images/cert-05.jpg" alt="เกียรติบัตร Internet Alert">
         <span class="year-tag">ประจำปีการศึกษา 2569</span>
       </div>
       <div class="cert-body">
@@ -251,12 +218,8 @@
 
     <!-- 6 -->
     <article class="cert-card">
-      <div class="cert-photo no-image">
-        <img src="images/cert-06.jpg" alt="เกียรติบัตร Internet Kind"
-             onerror="this.style.display='none'">
-        <div class="placeholder">
-          <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="9" cy="10" r="2"/><path d="M21 17l-5.5-5.5L9 18"/></svg>
-                 </div>
+      <div class="cert-photo">
+        <img src="images/cert-06.jpg" alt="เกียรติบัตร Internet Kind">
         <span class="year-tag">ประจำปีการศึกษา 2569</span>
       </div>
       <div class="cert-body">
@@ -267,12 +230,8 @@
 
     <!-- 7 -->
     <article class="cert-card">
-      <div class="cert-photo no-image">
-        <img src="images/cert-07.jpg" alt="เกียรติบัตร Internet Strong"
-             onerror="this.style.display='none'">
-        <div class="placeholder">
-          <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="9" cy="10" r="2"/><path d="M21 17l-5.5-5.5L9 18"/></svg>
-                  </div>
+      <div class="cert-photo">
+        <img src="images/cert-07.jpg" alt="เกียรติบัตร Internet Strong">
         <span class="year-tag">ประจำปีการศึกษา 2569</span>
       </div>
       <div class="cert-body">
@@ -283,12 +242,8 @@
 
     <!-- 8 -->
     <article class="cert-card">
-      <div class="cert-photo no-image">
-        <img src="images/cert-08.jpg" alt="เกียรติบัตร Internet Smart"
-             onerror="this.style.display='none'">
-        <div class="placeholder">
-          <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="9" cy="10" r="2"/><path d="M21 17l-5.5-5.5L9 18"/></svg>
-                  </div>
+      <div class="cert-photo">
+        <img src="images/cert-08.jpg" alt="เกียรติบัตร Internet Smart">
         <span class="year-tag">ประจำปีการศึกษา 2569</span>
       </div>
       <div class="cert-body">
@@ -299,13 +254,8 @@
 
     <!-- 9 -->
     <article class="cert-card">
-      <div class="cert-photo no-image">
-        <img src="images/cert-09.jpg" alt="เกียรติบัตรกิจกรรมแนะแนวทันตกรรม"
-             onerror="this.style.display='none'">
-        <div class="placeholder">
-          <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="9" cy="10" r="2"/><path d="M21 17l-5.5-5.5L9 18"/></svg>
-    
-        </div>
+      <div class="cert-photo">
+        <img src="images/cert-09.jpg" alt="เกียรติบัตรกิจกรรมแนะแนวทันตกรรม">
         <span class="year-tag">ประจำปีการศึกษา 2569</span>
       </div>
       <div class="cert-body">
@@ -316,13 +266,8 @@
 
     <!-- 10 -->
     <article class="cert-card">
-      <div class="cert-photo no-image">
-        <img src="images/cert-10.jpg" alt="เกียรติบัตรการแข่งขันอัจฉริยภาพทางคณิตศาสตร์"
-             onerror="this.style.display='none'">
-        <div class="placeholder">
-          <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="9" cy="10" r="2"/><path d="M21 17l-5.5-5.5L9 18"/></svg>
-          
-        </div>
+      <div class="cert-photo">
+        <img src="images/cert-10.jpg" alt="เกียรติบัตรการแข่งขันอัจฉริยภาพทางคณิตศาสตร์">
         <span class="year-tag">ประจำปีการศึกษา 2569</span>
       </div>
       <div class="cert-body">
